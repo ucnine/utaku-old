@@ -1,0 +1,20 @@
+{
+  "name": "utaku-old",
+  "version": "0.0.14.06",
+  "manifest_version": 2,
+  "description": "utaku-old",
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_popup": "nt.html"
+  },
+  "permissions": ["activeTab", "tabs", "storage", "downloads", "*://*/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}

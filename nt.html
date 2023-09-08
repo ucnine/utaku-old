@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>UTAKU IMAGE TAB</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="inject.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="before.js"></script>
+    <div id="loading">
+      <div class="inner" id="warn">로딩중...</div>
+    </div>
+    <div id="img_app">
+      <div id="control_pannel">
+        <div class="btns">
+          <button id="alldo">모두 다운</button>
+          <button id="seldo">선택 다운</button>
+          <button id="allsel">전체 선택</button>
+          <button id="desel">전체 해제</button>
+          <button id="linkarr" class="active">원본 경로 추적</button>
+          <button id="linkarrBack">되돌리기</button>
+          <button id="linkArrTwitter" class="active">트위터 링크 추출</button>
+          <div class="input_flex" id="folderuse">
+            <button class="folderuseBtn">폴더사용</button>
+          </div>
+          <div class="input_flex" id="folderlayer">
+            <span>폴더 : </span>
+            <div class="foldernameinput">
+              <input type="text" name="folderTitle" id="folderTitle" maxlength="150" value="" />
+              <button id="folderListBtn">폴더관리</button>
+              <button class="folderuseBtn" id="folderRemoveButton">폴더닫기</button>
+            </div>
+          </div>
+          <button id="img_control">설정</button>
+          <button id="opennewtab">새창</button>
+          <span id="progress"
+            ><span id="nowLength">0</span><span id="slash"> / </span><span id="filtered"></span>(<span
+              id="allLength"
+            ></span
+            >)</span
+          >
+        </div>
+      </div>
+      <div id="modal">
+        <div class="modal_outer">
+          <div class="modal_inner">
+            <div class="modal_container">
+              <div class="modal_box" id="modal_target"></div>
+              <div id="modal_bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="imgs_pack"></div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
